@@ -1,7 +1,7 @@
 version: '2.4'
 
 services:
-  users:
+  mosquitto:
     image: eclipse-mosquitto
     ports:
       - 1883:1883
