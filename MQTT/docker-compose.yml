@@ -1,0 +1,12 @@
+version: '2.4'
+
+services:
+  users:
+    image: eclipse-mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - "./data:/mosquitto/data"
+      - "./log:/mosquitto/log"
+      - "./:/mosquitto/config"
